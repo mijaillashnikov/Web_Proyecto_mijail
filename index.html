@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Archivo LEGO Star Wars 1999–2002 | Wiki de sets clásicos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wiki interactiva de los sets LEGO Star Wars de 1999 a 2002: piezas, minifiguras, año y era de cada set.">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/lego_logo.jpg">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Saira+Extra+Condensed:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    Basado en TemplateMo 559 Zay Shop
+    https://templatemo.com/tm-559-zay-shop
+-->
+</head>
+
+<body>
+    <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
+    <!-- Barra superior -->
+    <div class="sw-topbar d-none d-lg-block">
+        <div class="container">
+            <span>Wiki de fans: 26 sets documentados de la primera era LEGO Star Wars</span>
+            <a href="contact.html">Envía una corrección</a>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <nav class="navbar navbar-expand-lg sw-nav">
+        <div class="container">
+            <a class="sw-brand" href="index.html">
+                <img class="sw-brand__lego" src="assets/img/lego-logo.svg" alt="LEGO" width="52" height="52">
+                <span>
+                    <img class="sw-brand__sw" src="assets/img/starwars-logo.svg" alt="Star Wars" width="66" height="40">
+                    <small>Archivo de sets 1999–2002</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sw-main-nav" aria-controls="sw-main-nav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end gap-lg-4" id="sw-main-nav">
+                <ul class="sw-menu">
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="shop.html">Catálogo</a></li>
+                    <li><a href="about.html">Sobre la wiki</a></li>
+                    <li><a href="contact.html">Contribuir</a></li>
+                </ul>
+                <form class="sw-search" action="shop.html" method="get" role="search">
+                    <label class="visually-hidden" for="nav-q">Buscar sets</label>
+                    <input id="nav-q" type="search" name="q" placeholder="Nombre o número, ej. 7144">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenido">
+        <!-- Pliego de catálogo -->
+        <section class="sw-hero">
+            <div class="container">
+                <div class="sw-hero__grid">
+                    <div class="sw-panel">
+                        <div class="sw-panel__inner sw-hero__intro">
+                            <div class="sw-hero__logos">
+                                <img class="lego" src="assets/img/lego-logo.svg" alt="LEGO" width="78" height="78">
+                                <img class="sw" src="assets/img/starwars-logo.svg" alt="Star Wars" width="116" height="70">
+                            </div>
+                            <h1>Todos los sets de la primera galaxia LEGO</h1>
+                            <p class="sw-hero__lead">Fichas de cada set LEGO Star Wars lanzado entre 1999 y 2002, con piezas, minifiguras, edad de la caja y la película de la que sale.</p>
+                            <dl class="sw-hero__stats">
+                                <div><dt>Sets</dt><dd id="stat-sets">26</dd></div>
+                                <div><dt>Piezas en total</dt><dd id="stat-pieces">6.110</dd></div>
+                                <div><dt>Minifiguras</dt><dd id="stat-figs">81</dd></div>
+                            </dl>
+                            <div class="d-flex flex-wrap gap-2">
+                                <a class="sw-btn" href="shop.html">Abrir el catálogo</a>
+                                <a class="sw-btn sw-btn--ghost" href="shop.html?year=1999">Sets de 1999</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="sw-panel text-decoration-none" href="shop-single.html?set=7144">
+                        <div class="sw-panel__inner sw-hero__feature">
+                            <span class="sw-num">7144</span>
+                            <h2>Slave I</h2>
+                            <p>Boba Fett lleva a Han Solo congelado en carbonita hasta Jabba. El primer Slave I de LEGO, del año 2000.</p>
+                            <div class="sw-hero__feature-img">
+                                <img class="sw-blend" src="assets/img/sets/7144.png" alt="Set 7144 Slave I montado" width="500" height="500">
+                            </div>
+                            <div class="sw-hero__feature-foot">
+                                <span class="sw-chip"><b>165</b> piezas</span>
+                                <span class="sw-chip"><b>2</b> minifigs</span>
+                                <span class="sw-age">7-12</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="sw-strip" id="sw-strip" aria-label="Más sets del archivo"></div>
+            </div>
+        </section>
+
+        <!-- Eras -->
+        <section class="sw-section">
+            <div class="container">
+                <div class="sw-section-head">
+                    <h2>Explora por era</h2>
+                    <p>LEGO empezó con la trilogía original y La amenaza fantasma en 1999, y sumó El ataque de los clones en 2002.</p>
+                </div>
+                <div class="sw-eras">
+                    <div class="sw-era-card">
+                        <a class="sw-panel" href="shop.html?era=ot">
+                            <div class="sw-panel__inner">
+                                <h3>Trilogía Original</h3>
+                                <p class="films">Episodios IV, V y VI</p>
+                                <img class="sw-blend" src="assets/img/sets/7190.png" alt="" width="500" height="500" loading="lazy">
+                                <span class="count" data-era-count="ot">12 sets en el archivo</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sw-era-card">
+                        <a class="sw-panel" href="shop.html?era=ep1">
+                            <div class="sw-panel__inner">
+                                <h3>Episodio I</h3>
+                                <p class="films">La amenaza fantasma</p>
+                                <img class="sw-blend" src="assets/img/sets/7141.png" alt="" width="500" height="500" loading="lazy">
+                                <span class="count" data-era-count="ep1">10 sets en el archivo</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="sw-era-card">
+                        <a class="sw-panel" href="shop.html?era=ep2">
+                            <div class="sw-panel__inner">
+                                <h3>Episodio II</h3>
+                                <p class="films">El ataque de los clones</p>
+                                <img class="sw-blend" src="assets/img/sets/7153.png" alt="" width="500" height="500" loading="lazy">
+                                <span class="count" data-era-count="ep2">4 sets en el archivo</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destacados -->
+        <section class="sw-section pt-0">
+            <div class="container">
+                <div class="sw-section-head">
+                    <h2>Sets destacados</h2>
+                    <a class="sw-btn sw-btn--ghost" href="shop.html">Ver los 26 sets</a>
+                </div>
+                <div class="sw-grid sw-grid--3" id="sw-featured"></div>
+            </div>
+        </section>
+
+        <!-- Cronología -->
+        <section class="sw-section pt-0">
+            <div class="container">
+                <div class="sw-section-head">
+                    <h2>Año a año</h2>
+                </div>
+                <ol class="sw-timeline">
+                    <li>
+                        <span class="y">1999</span>
+                        <p>Primera licencia de la historia de LEGO. Llegan el X-Wing, el Snowspeeder y toda la línea de La amenaza fantasma.</p>
+                        <a href="shop.html?year=1999" data-year-count="1999">Ver los sets de 1999</a>
+                    </li>
+                    <li>
+                        <span class="y">2000</span>
+                        <p>Segunda ola: Slave I, A-Wing, B-Wing y el primer Halcón Milenario de LEGO.</p>
+                        <a href="shop.html?year=2000" data-year-count="2000">Ver los sets de 2000</a>
+                    </li>
+                    <li>
+                        <span class="y">2001</span>
+                        <p>El retorno del Jedi gana peso con la lanzadera imperial y el AT-ST pilotado por Chewbacca.</p>
+                        <a href="shop.html?year=2001" data-year-count="2001">Ver los sets de 2001</a>
+                    </li>
+                    <li>
+                        <span class="y">2002</span>
+                        <p>El ataque de los clones trae la cañonera de la República, el Slave I de Jango y el primer Yoda minifigura.</p>
+                        <a href="shop.html?year=2002" data-year-count="2002">Ver los sets de 2002</a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer class="sw-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h2>Archivo LEGO Star Wars</h2>
+                    <p>Wiki de fans sobre los sets de 1999 a 2002. Datos de Brickipedia y Brickset; imágenes de BrickLink y Rebrickable.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>Catálogo</h2>
+                    <ul>
+                        <li><a href="shop.html?era=ot">Trilogía Original</a></li>
+                        <li><a href="shop.html?era=ep1">Episodio I</a></li>
+                        <li><a href="shop.html?era=ep2">Episodio II</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h2>La wiki</h2>
+                    <ul>
+                        <li><a href="about.html">Sobre el archivo</a></li>
+                        <li><a href="contact.html">Envía una corrección</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="sw-footer__legal">LEGO y el logotipo de LEGO son marcas de The LEGO Group. Star Wars es una marca de Lucasfilm Ltd. Este sitio es un proyecto de fans sin afiliación con ninguna de las dos empresas. Imágenes de sets: BrickLink y Rebrickable.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sets-data.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

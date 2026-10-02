@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo de sets | Archivo LEGO Star Wars 1999–2002</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wiki interactiva de los sets LEGO Star Wars de 1999 a 2002: piezas, minifiguras, año y era de cada set.">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Saira+Extra+Condensed:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    Basado en TemplateMo 559 Zay Shop
+    https://templatemo.com/tm-559-zay-shop
+-->
+</head>
+
+<body>
+    <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
+    <!-- Barra superior -->
+    <div class="sw-topbar d-none d-lg-block">
+        <div class="container">
+            <span>Wiki de fans: 26 sets documentados de la primera era LEGO Star Wars</span>
+            <a href="contact.html">Envía una corrección</a>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <nav class="navbar navbar-expand-lg sw-nav">
+        <div class="container">
+            <a class="sw-brand" href="index.html">
+                <img class="sw-brand__lego" src="assets/img/lego-logo.svg" alt="LEGO" width="52" height="52">
+                <span>
+                    <img class="sw-brand__sw" src="assets/img/starwars-logo.svg" alt="Star Wars" width="66" height="40">
+                    <small>Archivo de sets 1999–2002</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sw-main-nav" aria-controls="sw-main-nav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end gap-lg-4" id="sw-main-nav">
+                <ul class="sw-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="shop.html" aria-current="page">Catálogo</a></li>
+                    <li><a href="about.html">Sobre la wiki</a></li>
+                    <li><a href="contact.html">Contribuir</a></li>
+                </ul>
+                <form class="sw-search" action="shop.html" method="get" role="search">
+                    <label class="visually-hidden" for="nav-q">Buscar sets</label>
+                    <input id="nav-q" type="search" name="q" placeholder="Nombre o número, ej. 7144">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenido">
+        <header class="sw-page-head">
+            <div class="container">
+                <h1>Catálogo de sets</h1>
+                <p>Filtra los 26 sets por era, año de salida o número de piezas. Toca cualquier tarjeta para abrir su ficha técnica.</p>
+            </div>
+        </header>
+
+        <section class="sw-section--tight">
+            <div class="container sw-catalog">
+                <aside class="sw-filters sw-panel" aria-label="Filtros">
+                    <form class="sw-panel__inner" id="sw-filters">
+                        <fieldset>
+                            <legend>Buscar</legend>
+                            <label class="visually-hidden" for="f-q">Nombre, número o minifigura</label>
+                            <input id="f-q" type="search" name="q" placeholder="Ej. Boba Fett o 7140">
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Era</legend>
+                            <label><input type="checkbox" name="era" value="ot"> Trilogía Original <small data-count-era="ot"></small></label>
+                            <label><input type="checkbox" name="era" value="ep1"> Episodio I <small data-count-era="ep1"></small></label>
+                            <label><input type="checkbox" name="era" value="ep2"> Episodio II <small data-count-era="ep2"></small></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Año de salida</legend>
+                            <div class="sw-years">
+                                <label><input type="checkbox" name="year" value="1999"><span>1999</span></label>
+                                <label><input type="checkbox" name="year" value="2000"><span>2000</span></label>
+                                <label><input type="checkbox" name="year" value="2001"><span>2001</span></label>
+                                <label><input type="checkbox" name="year" value="2002"><span>2002</span></label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Piezas</legend>
+                            <label><input type="radio" name="pieces" value="" checked> Cualquier cantidad</label>
+                            <label><input type="radio" name="pieces" value="s"> Menos de 100 <small data-count-range="s"></small></label>
+                            <label><input type="radio" name="pieces" value="m"> De 100 a 299 <small data-count-range="m"></small></label>
+                            <label><input type="radio" name="pieces" value="l"> 300 o más <small data-count-range="l"></small></label>
+                        </fieldset>
+
+                        <button type="button" class="sw-reset" id="sw-reset">Quitar todos los filtros</button>
+                    </form>
+                </aside>
+
+                <div>
+                    <div class="sw-toolbar">
+                        <p class="sw-toolbar__count" id="sw-count" aria-live="polite"><b>26</b> de 26 sets</p>
+                        <label for="sw-sort">Ordenar por
+                            <select id="sw-sort">
+                                <option value="year">Año de salida</option>
+                                <option value="pieces-desc">Más piezas</option>
+                                <option value="pieces-asc">Menos piezas</option>
+                                <option value="name">Nombre (A-Z)</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="sw-grid" id="sw-grid">
+                        <noscript><p class="sw-empty">Activa JavaScript para ver y filtrar el catálogo.</p></noscript>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer class="sw-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h2>Archivo LEGO Star Wars</h2>
+                    <p>Wiki de fans sobre los sets de 1999 a 2002. Datos de Brickipedia y Brickset; imágenes de BrickLink y Rebrickable.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>Catálogo</h2>
+                    <ul>
+                        <li><a href="shop.html?era=ot">Trilogía Original</a></li>
+                        <li><a href="shop.html?era=ep1">Episodio I</a></li>
+                        <li><a href="shop.html?era=ep2">Episodio II</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h2>La wiki</h2>
+                    <ul>
+                        <li><a href="about.html">Sobre el archivo</a></li>
+                        <li><a href="contact.html">Envía una corrección</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="sw-footer__legal">LEGO y el logotipo de LEGO son marcas de The LEGO Group. Star Wars es una marca de Lucasfilm Ltd. Este sitio es un proyecto de fans sin afiliación con ninguna de las dos empresas. Imágenes de sets: BrickLink y Rebrickable.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sets-data.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Contribuir | Archivo LEGO Star Wars 1999–2002</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wiki interactiva de los sets LEGO Star Wars de 1999 a 2002: piezas, minifiguras, año y era de cada set.">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Saira+Extra+Condensed:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="assets/css/custom.css">
+<!--
+    Basado en TemplateMo 559 Zay Shop
+    https://templatemo.com/tm-559-zay-shop
+-->
+</head>
+
+<body>
+    <a class="visually-hidden-focusable" href="#contenido">Saltar al contenido</a>
+
+    <!-- Barra superior -->
+    <div class="sw-topbar d-none d-lg-block">
+        <div class="container">
+            <span>Wiki de fans: 26 sets documentados de la primera era LEGO Star Wars</span>
+            <a href="contact.html">Envía una corrección</a>
+        </div>
+    </div>
+
+    <!-- Cabecera -->
+    <nav class="navbar navbar-expand-lg sw-nav">
+        <div class="container">
+            <a class="sw-brand" href="index.html">
+                <img class="sw-brand__lego" src="assets/img/lego-logo.svg" alt="LEGO" width="52" height="52">
+                <span>
+                    <img class="sw-brand__sw" src="assets/img/starwars-logo.svg" alt="Star Wars" width="66" height="40">
+                    <small>Archivo de sets 1999–2002</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sw-main-nav" aria-controls="sw-main-nav" aria-expanded="false" aria-label="Abrir menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end gap-lg-4" id="sw-main-nav">
+                <ul class="sw-menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="shop.html">Catálogo</a></li>
+                    <li><a href="about.html">Sobre la wiki</a></li>
+                    <li><a href="contact.html" aria-current="page">Contribuir</a></li>
+                </ul>
+                <form class="sw-search" action="shop.html" method="get" role="search">
+                    <label class="visually-hidden" for="nav-q">Buscar sets</label>
+                    <input id="nav-q" type="search" name="q" placeholder="Nombre o número, ej. 7144">
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenido">
+        <header class="sw-page-head">
+            <div class="container">
+                <h1>Contribuir</h1>
+                <p>¿Una cifra de piezas no cuadra, falta una minifigura o tienes la caja original? Envía la corrección con su fuente y la revisaremos.</p>
+            </div>
+        </header>
+
+        <section class="sw-section--tight">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="sw-panel">
+                            <form class="sw-panel__inner sw-form p-4" id="sw-contrib">
+                                <label for="c-set">Set</label>
+                                <select id="c-set" name="set">
+                                    <option value="">Un set que no está en el archivo</option>
+                                </select>
+
+                                <label for="c-tipo">Tipo de aporte</label>
+                                <select id="c-tipo" name="tipo">
+                                    <option>Corrección de datos</option>
+                                    <option>Minifigura que falta</option>
+                                    <option>Foto de caja o manual</option>
+                                    <option>Set nuevo para el archivo</option>
+                                </select>
+
+                                <label for="c-mensaje">Qué hay que cambiar</label>
+                                <textarea id="c-mensaje" name="mensaje" required placeholder="Ej. El 7130 Snowspeeder trae 212 piezas según el inventario, no 213."></textarea>
+
+                                <label for="c-fuente">Fuente</label>
+                                <input id="c-fuente" name="fuente" type="text" placeholder="Enlace, catálogo o foto de la caja">
+                                <p class="hint">Aceptamos catálogos impresos, manuales e inventarios de BrickLink o Rebrickable.</p>
+
+                                <label for="c-nombre">Tu nombre o alias (opcional)</label>
+                                <input id="c-nombre" name="nombre" type="text" autocomplete="nickname">
+
+                                <button type="submit" class="sw-btn">Preparar correo con la corrección</button>
+                                <p class="mt-3 mb-0" id="sw-contrib-status" role="status"></p>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <section class="sw-window" aria-label="Normas de edición">
+                            <div class="sw-window__title"><span>Normas de edición - Microsoft Internet Explorer</span>
+                                <span class="sw-window__btns" aria-hidden="true"><i>_</i><i>&#9633;</i><i>&times;</i></span></div>
+                            <div class="sw-window__bar" aria-hidden="true">Dirección <span class="sw-window__addr">http://www.lego.com/starwars/normas.asp</span></div>
+                            <div class="sw-window__body">
+                                <h3>Antes de enviar</h3>
+                                <ul class="sw-notes">
+                                    <li>Solo sets de 1999 a 2002.</li>
+                                    <li>Indica siempre de dónde sale el dato.</li>
+                                    <li>Los nombres de minifiguras van como aparecen en el inventario oficial.</li>
+                                    <li>Las fotos deben ser tuyas o de uso libre.</li>
+                                </ul>
+                            </div>
+                            <div class="sw-window__status" aria-hidden="true">Listo</div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie -->
+    <footer class="sw-footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-5">
+                    <h2>Archivo LEGO Star Wars</h2>
+                    <p>Wiki de fans sobre los sets de 1999 a 2002. Datos de Brickipedia y Brickset; imágenes de BrickLink y Rebrickable.</p>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h2>Catálogo</h2>
+                    <ul>
+                        <li><a href="shop.html?era=ot">Trilogía Original</a></li>
+                        <li><a href="shop.html?era=ep1">Episodio I</a></li>
+                        <li><a href="shop.html?era=ep2">Episodio II</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4">
+                    <h2>La wiki</h2>
+                    <ul>
+                        <li><a href="about.html">Sobre el archivo</a></li>
+                        <li><a href="contact.html">Envía una corrección</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="sw-footer__legal">LEGO y el logotipo de LEGO son marcas de The LEGO Group. Star Wars es una marca de Lucasfilm Ltd. Este sitio es un proyecto de fans sin afiliación con ninguna de las dos empresas. Imágenes de sets: BrickLink y Rebrickable.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sets-data.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
